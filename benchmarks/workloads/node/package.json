@@ -5,7 +5,7 @@
   "dependencies": {
     "@google-cloud/container": "^0.3.0",
     "@google-cloud/logging": "^4.2.0",
-    "@google-cloud/monitoring": "^0.6.0",
+    "@google-cloud/monitoring": "^0.7.1",
     "@google-cloud/spanner": "^2.2.1",
     "async": "^2.6.1",
     "bluebird": "^3.5.3",
