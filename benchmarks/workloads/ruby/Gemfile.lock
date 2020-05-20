@@ -1,19 +1,30 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.2.3)
+    activemerchant (1.107.3)
+      activesupport (>= 4.2)
+      builder (>= 2.1.2, < 4.0.0)
+      i18n (>= 0.6.9)
+      nokogiri (~> 1.4)
+    activesupport (5.2.4.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    bcrypt (3.1.13)
+    builder (3.2.4)
     cassandra-driver (3.2.3)
       ione (~> 1.2)
-    concurrent-ruby (1.1.5)
-    i18n (1.6.0)
+    concurrent-ruby (1.1.6)
+    ffi (1.12.2)
+    i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     ione (1.2.4)
-    minitest (5.11.3)
+    mini_portile2 (2.4.0)
+    minitest (5.14.1)
     mustermann (1.0.3)
+    nokogiri (1.10.9)
+      mini_portile2 (~> 2.4.0)
     pdf-core (0.7.0)
     prawn (2.2.2)
       pdf-core (~> 0.7.0)
@@ -23,6 +34,8 @@ GEM
     rack-protection (2.0.5)
       rack
     rake (12.3.2)
+    rbnacl (7.1.1)
+      ffi
     redis (4.1.1)
     ruby-fann (1.2.6)
     sinatra (2.0.5)
@@ -35,21 +48,24 @@ GEM
       prawn (~> 2.2)
     thread_safe (0.3.6)
     tilt (2.0.9)
-    ttfunk (1.5.1)
-    tzinfo (1.2.5)
+    ttfunk (1.6.2.1)
+    tzinfo (1.2.7)
       thread_safe (~> 0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  activemerchant
+  bcrypt
   cassandra-driver
   puma
   rake
+  rbnacl
   redis
   ruby-fann
   sinatra
-  squid (~> 1.4)
+  squid (~> 1.4, >= 1.4.1)
 
 BUNDLED WITH
-   1.17.1
+   1.17.3
