@@ -2,25 +2,27 @@ GEM
   remote: https://rubygems.org/
   specs:
     mustermann (1.0.3)
-    puma (3.12.0)
+    nio4r (2.5.2)
+    puma (4.3.5)
+      nio4r (~> 2.0)
     rack (2.0.6)
     rack-protection (2.0.5)
       rack
+    redis (4.1.0)
     sinatra (2.0.5)
       mustermann (~> 1.0)
       rack (~> 2.0)
       rack-protection (= 2.0.5)
       tilt (~> 2.0)
     tilt (2.0.9)
-    redis (4.1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  puma
-  sinatra
+  puma (>= 3.12.6)
   redis
+  sinatra
 
 BUNDLED WITH
-   1.17.1
+   1.17.3
