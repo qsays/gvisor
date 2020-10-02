@@ -10,7 +10,7 @@
     "async": "^2.6.1",
     "bluebird": "^3.5.3",
     "express": "^4.16.4",
-    "firebase": "^5.7.2",
+    "firebase": "^7.22.0",
     "firebase-admin": "^6.4.0",
     "lodash": "^4.17.11",
     "mailgun-js": "^0.22.0",
