@@ -1,55 +1,74 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.2.3)
+    activemerchant (1.126.0)
+      activesupport (>= 4.2)
+      builder (>= 2.1.2, < 4.0.0)
+      i18n (>= 0.6.9)
+      nokogiri (~> 1.4)
+    activesupport (7.0.4.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 0.7, < 2)
-      minitest (~> 5.1)
-      tzinfo (~> 1.1)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+    bcrypt (3.1.18)
+    builder (3.2.4)
     cassandra-driver (3.2.3)
       ione (~> 1.2)
-    concurrent-ruby (1.1.5)
-    i18n (1.6.0)
+    concurrent-ruby (1.2.2)
+    ffi (1.15.5)
+    i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     ione (1.2.4)
-    minitest (5.11.3)
-    mustermann (1.0.3)
-    pdf-core (0.7.0)
-    prawn (2.2.2)
-      pdf-core (~> 0.7.0)
-      ttfunk (~> 1.5)
+    mini_portile2 (2.8.1)
+    minitest (5.18.0)
+    mustermann (3.0.0)
+      ruby2_keywords (~> 0.0.1)
+    nokogiri (1.14.2)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
+    pdf-core (0.9.0)
+    prawn (2.4.0)
+      pdf-core (~> 0.9.0)
+      ttfunk (~> 1.7)
     puma (3.12.1)
-    rack (2.0.7)
-    rack-protection (2.0.5)
+    racc (1.6.2)
+    rack (2.2.6.4)
+    rack-protection (3.0.5)
       rack
     rake (12.3.2)
+    rbnacl (7.1.1)
+      ffi
     redis (4.1.1)
     ruby-fann (1.2.6)
-    sinatra (2.0.5)
-      mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.5)
+    ruby2_keywords (0.0.5)
+    sinatra (3.0.5)
+      mustermann (~> 3.0)
+      rack (~> 2.2, >= 2.2.4)
+      rack-protection (= 3.0.5)
       tilt (~> 2.0)
     squid (1.4.1)
       activesupport (>= 4.0)
       prawn (~> 2.2)
-    thread_safe (0.3.6)
-    tilt (2.0.9)
-    ttfunk (1.5.1)
-    tzinfo (1.2.5)
-      thread_safe (~> 0.1)
+    tilt (2.1.0)
+    ttfunk (1.7.0)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  activemerchant
+  bcrypt
   cassandra-driver
   puma
   rake
+  rbnacl
   redis
   ruby-fann
   sinatra
-  squid (~> 1.4)
+  squid (~> 1.4, >= 1.4.1)
 
 BUNDLED WITH
-   1.17.1
+   1.17.3
