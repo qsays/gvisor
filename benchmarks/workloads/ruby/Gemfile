@@ -1,10 +1,10 @@
 source "https://rubygems.org"
 # load a bunch of dependencies to take up memory
-gem "sinatra"
-gem "puma"
+gem "sinatra", ">= 2.2.3"
+gem "puma", ">= 4.3.12"
 gem "redis"
-gem 'rake'
-gem 'squid', '~> 1.4'
+gem 'rake', '>= 12.3.3'
+gem 'squid', '~> 1.4', '>= 1.4.1'
 gem 'cassandra-driver'
 gem 'ruby-fann'
 gem 'rbnacl'
