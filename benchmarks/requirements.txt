@@ -9,7 +9,7 @@ Click==7.0
 cryptography==2.8
 docker==3.7.0
 docker-pycreds==0.4.0
-idna==2.8
+idna==3.7
 importlib-metadata==0.23
 more-itertools==7.2.0
 packaging==19.2
