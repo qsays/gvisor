@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 # load a bunch of dependencies to take up memory
-gem "sinatra"
+gem "sinatra", ">= 4.1.0"
 gem "puma"
 gem "redis"
 gem 'rake'
